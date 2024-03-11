@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #E2BFB3;
+}
+
+.schedule {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+
+head{
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    table-layout: fixed; /* Ensure the table layout doesn't change */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center; /* Horizontal alignment */
+    vertical-align: middle; /* Vertical alignment */
+    background-color: white; /* Default cell background color */
+    font-size: 14px; /* Fixed font size */
+    background-color: #E2BFB3;
+}
+
+th:first-child,
+td:first-child {
+    width: 10%; /* First column width */
+}
+
+th:not(:first-child),
+td:not(:first-child) {
+    width: 15%; /* Remaining columns width */
+}
+
+th {
+    background-color: black; /* Custom table header background color */
+    color: white; /* Custom table header text color */
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+header {
+    padding: 20px;
+}
+
+header h3 {
+    margin: 0;
+    font-size: 1.5em; /* Larger header size */
+}
+
+img {
+    width: 150px;
+    height: auto;
+}
+
+td.a { background-color: #B590CA;}
+td.b { background-color: #A8D3DA; }
+td.c { background-color: #F5CAB3;}
+td.d { background-color: #F3ECB8; }
+td.e { background-color: #FF8080; }
+td.f { background-color: #FFCF96; }
+td.g { background-color: #F6FDC3; }
+td.h { background-color: #CDFAD5; }
+td.i { background-color: #B0C5A4; }
+td.j { background-color: #D37676; }
+td.ITEP207 { background-color: #EBC49F; 
+color:#385764;} 
+td.ITEL203 { background-color: #F1EF99; 
+color:#c645b4;}
+td.ITEP206 { background-color: #89B9AD;
+color:#181ec0; }
+td.ITEP205 { background-color: #9F70FD; 
+color:#A94438;}
+td.GEC108 { background-color: #FED049; 
+color:#0c6b1d;}
+td.ITEP204 { background-color: #FA7070; 
+color:#FFBB5C;}
+td.PE { background-color:#9BCF53; 
+color:#21E1E1;}
+    
+@media print {
+    img{
+
+        filter: grayscale(100%);
+    }
+    body {
+        font-family: "Times New Roman", Times, serif; /* Font usage in print mode */
+        background-color: white; /* White background for printing */
+        color: black; /* Black text color for printing */
+    }
+
+    table {
+        background-color: white; /* White background for printing */
+    }
+
+    th, td {
+        background-color: #f0f0f0; /* Shades of gray for table cells */
+        color: black; /* Black text color for printing */
+    }
+}
